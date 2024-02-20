@@ -8,8 +8,7 @@ public class Main1 {
         System.out.println("Введите число а");
         int a = console.nextInt(); //40 - 0010 1000
         System.out.println("Введите число b");
-        int b = console.nextInt(); //82 - 0101 0010
-
+        int b = console.nextInt(); //82 - 0101 0010 - это пример
         int y = a & b; // 0 - 0000 000
         int n = a | b; // 122 - 0111 1010
 
