@@ -18,7 +18,7 @@ public class Main4_2 {
         int max = Math.max(Math.max(a, b), c);
         int min = Math.min(Math.min(a, b), c);
 
-        int result = a + b + c - (min + max);
+        int result = a + b + c - (min + max); //Тут проверено хорошо
 
         System.out.println("Среднее: " + result);
     }
