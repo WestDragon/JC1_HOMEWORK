@@ -1,4 +1,4 @@
-package home_work_1;
+package home_work_12;
 
 /**
  * 	2.1 5 + 2 / 8

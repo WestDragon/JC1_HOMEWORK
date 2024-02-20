@@ -1,6 +1,5 @@
-package home_work_1;
+package home_work_12;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 /**
@@ -10,21 +9,25 @@ import java.util.Scanner;
  * 		2. Если имя будет равно имени "Анастасия" тогда в консоль должно вывести сообщение "Я тебя так долго ждал".
  * 		3. В случае если это будет другое имя то вывести сообщение "Добрый день, а вы кто?".
  * 	Как это сделать:
- * 		6.2 Написать в отдельном классе main метод и в нём код который будет выполнять общее условие при помощи if else if
+ * 		6.3 Написать в отдельном классе main метод и в нём код который будет выполнять общее условие при помощи switch
  */
-public class Main6_2 {
+public class Main6_3 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите свое имя");
         String name = console.nextLine();
 
-        if(Objects.equals(name, "Вася")){
-            System.out.println("Привет!");
-            System.out.println("Я тебя так долго ждал");
-        } else if(Objects.equals(name, "Анастасия")) {
-            System.out.println("Я тебя так долго ждал");
-        } else {
-            System.out.println("Добрый день, а вы кто?");
+        switch (name){
+            default:
+                System.out.println("Добрый день, а вы кто?");
+                break;
+            case "Вася":
+                System.out.println("Привет!");
+//                System.out.println("Я тебя так долго ждал");
+//                break;
+            case "Анастасия":
+                System.out.println("Я тебя так долго ждал");
+                break;
         }
     }
 }
